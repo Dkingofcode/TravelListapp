@@ -1,7 +1,7 @@
 import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
-import '../App.css';
+import "../App.css";
 import Form from './Form'
 import Logo from './Logo'
 import PackingList from './PackingList'
@@ -36,14 +36,13 @@ function handleClearlist() {
 
   return (
     <>
-      <div>
-        <div>
+        <div className='app'>
       <Logo  />
       <Form onAddItems={handleAddItems} />
       <PackingList items={items} onDeleteItem={handleDeleteItem} onToggleItem={handleToggleItem} onClearList={handleClearlist}  />
       <Stats items={items} />
     </div>
-   </div>
+  
       
     </>
   )

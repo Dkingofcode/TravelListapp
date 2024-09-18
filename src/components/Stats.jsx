@@ -1,4 +1,6 @@
 import React from 'react'
+import "../App.css";
+
 
 const Stats = ({ items }) => {
     if(!items.length) return ( <p><em>Start adding some items to your packing list 🚀</em></p>)

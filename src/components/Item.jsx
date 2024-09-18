@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import "../App.css";
+
 
 const Item = ({ item, deleteItem, onToggleItem }) => {
   
   
  return (
-    <div>
 
         <li>
             <input type='checkbox' value={item.packed} onChange={() => onToggleItem(item.id)}   />
@@ -15,7 +16,7 @@ const Item = ({ item, deleteItem, onToggleItem }) => {
         </li>
 
 
-    </div>
+    
   )
 }
 
